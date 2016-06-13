@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style>
+		.invalid {
+			background-color: red;
+			opacity: 0.8;
+		}
+		label {
+			display: block;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="post">
+		<label> Text <input type="text" class="field" required></label>
+		<label> Password <input type="password" class="pass"></label>
+		<label> Text area <textarea  class="area"></textarea >
+		<label> Radio <input type="radio" class="rad_1">
+					<input type="radio" class="rad_2">
+					<input type="radio" class="rad_3">
+		</label>
+		<label> CheckBox <input type="checkbox" class="check_1">
+					<input type="checkbox" class="check_2">
+					<input type="checkbox" class="check_3">
+		</label>
+		<select>
+					<option class="sel_1">Пункт 1</option>
+					<option class="sel_2">Пункт 2</option> 
+		</select>
+		<label> IMG <input type="image" src="http://dreamingofkawaii.weebly.com/uploads/3/1/5/7/31575167/106127.png" class="pic" width="60px" height="60px"></label>
+		<label> File <input type="file" class="file"></label>
+		<label>Email <input type="email" class="email"></label>
+		<label>Color <input type="color" class="col"></label>
+		<label>Numbers <input type="number" class="numb"></label>
+		<label>Range <input type="range" min="0" max="100" step="1" value="50" class="ran"></label>
+		<label>Date <input type="date" class="dat"></label>
+		
+
+		<input type="submit" id="registration">
+	</form>
+	<script src="1.js"></script>
+</body>
+</html>

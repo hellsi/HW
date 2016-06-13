@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function loadXMLDoc(){
+
+			var xmlhttp;
+
+			xmlhttp = new XMLHttpRequest();
+
+			xmlhttp.onreadystatechange = function () {
+				if (xmlhttp.readyState == 4 && xmlhttp.status === 200) {
+					var json = JSON.parse(xmlhttp.responseText);
+					var readers = json.readers;
+
+					 for(var i=0; i<readers.length; i++){
+                        var reader = readers[i];
+                        var div = document.createElement('div');
+                        div.classList.add('reader');
+                        
+                        var p = document.createElement('p');
+                      p.appendChild(document.createTextNode(reader.name));
+                        
+                        var p1 = document.createElement('p');
+                      p1.appendChild(document.createTextNode(reader.books.length));
+                        div.appendChild(p);
+                        div.appendChild(p1);
+                        
+                        document.getElementById("myDiv").appendChild(div);
+                    }
+                   }
+                  }
+			// xmlhttp.open("GET", "ajax.html", true);
+			xmlhttp.open("GET", "data.json", true);
+			xmlhttp.send();
+
+		}
+	</script>
+</head>
+
+<body>
+	
+	<div id="myDiv">
+	<img src="http://www.sunny-cat.ru/datas/users/1-kenny005.jpg"></h1>
+		<h2>Ajaxxxx</h2>
+	</div>
+	<button type="button" onclick="loadXMLDoc()">changeee</button>
+
+	
+</body>
+</html>

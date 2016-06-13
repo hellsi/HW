@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Event</title>
+</head>
+<body>
+	<a href="http://google.com">Google</a>
+
+	<script>
+		document.getElementsByTagName('a')[0].onclick = function (e) {
+			e.preventDefault();
+			alert('click on google');
+			return false;
+		}	
+	</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Event</title>
+	<style>
+		.parent {
+			width: 550px;
+			height: 300px;
+			padding: 100px;
+			border: 20px solid black;
+		}
+		.child {
+			width: 150px;
+			height: 150px;
+			padding: 50px;
+			border: 1px solid black;
+			background-color: aqua;
+			display: inline-block;
+		}
+		.subchild {
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child1 child">
+			<div class="subchild"></div>
+		</div>
+		<div class="child2 child"></div>
+	</div>
+
+	<script> 
+	var handler = function (e){
+		console.log("event type: " + e.type +"x: " + e.clientX + "; y: " + e.clientY + "target " + e.target.className + "current targer " + e.currentTarget.className);
+	};
+
+	document.getElementsByClassName('parent') [0]
+		.onmouseover = handler;
+	document.getElementsByClassName('parent') [0]
+		.onmouseout = handler;
+	document.getElementsByClassName('parent') [0]
+		.onmouseenter = handler;
+	document.getElementsByClassName('parent') [0]
+		.onmouseleave = handler;
+
+	// document.getElementsByClassName('child') [0]
+	// 	.onmouseover = handler;
+	// document.getElementsByClassName('child') [0]
+	// 	.onmouseout = handler;
+	// document.getElementsByClassName('child') [0]
+	// 	.onmouseenter = handler;
+	// document.getElementsByClassName('child') [0]
+	// 	.onmouseleave = handler;
+	</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+/*
+  ========================================
+  BODY
+  ========================================
+*/
+		body {
+			background: url(uni.jpg);
+			background-size: cover;
+		}
+/*
+  ========================================
+  Head
+  ========================================
+*/
+		.head {
+			font-size: 30px;
+			margin: 20px;
+			color: white;
+		}
+		.plus_note {
+			width: 40px;
+			height: 40px;
+			border: none;
+			background: url(plus.png) no-repeat;
+			background-size: contain;
+			outline: none;
+		}
+		.plus_note:hover {
+			cursor:pointer;
+		}
+/*
+  ========================================
+  Table
+  ========================================
+*/
+		.table {
+			height: 100%;
+			width: 100%;
+		}
+		.notes {
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			background-color: aqua;
+			margin: 20px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		.notes:hover {
+			cursor:move;
+		}
+		textarea {
+			resize: none;
+			border-radius: 5px;
+		}
+		.title_note {
+			height: 10%;
+			width: 70%;
+			margin: 5px;
+		}
+		.con-tent_note {
+			height: 70%;
+			margin: 5px;
+			width: 180px;
+		}
+		.delete_note {
+			width: 20px;
+			height: 20px;
+			border: none;
+			background: url(delete.png) no-repeat;
+			background-size: contain;
+			outline: none;
+		}
+		.delete_note:hover {
+			cursor:pointer;
+		}

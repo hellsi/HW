@@ -36,8 +36,9 @@ function resizeLater () {
 	newWin.resizeBy(500,500);
 }
 function scrollNew () {
-	var element = window.open("https://new.vk.com/feed","n10tka",'width=500,height=500'); // з усім вийшло поборотись, а тут на жаль я так розумію заважає безпека сторінки :(
-	element.scrollBy(100,0); 
+	setTimeout(function () {
+	var element = window.open("https://new.vk.com/feed","n10tka",'width=500,height=500'); 
+	element.scrollBy(100,0);},1000);
 }
 function scrollCurrent () {
 	window.scrollTo(200,250);

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<style>
+		.invalid {
+			background-color: red;
+			opacity: 0.8;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="post">
+		<label> Name <input type="text"  name="name" required pattern mandatory class="field"></label>
+		<label> Surname <input type="text" name="surname" required mandatory class="field"></label>
+		<label> Age <input type="text" name="age" required mandatory class="field"></label>
+<!-- 		<label> Name <input type="input" name="text"></label>
+		<label> Surname <input type="input" name="email"></label>
+		<label> Age <input type="input" name="number"></label>
+		<label> Age <input type="radio" name="radio"></label>
+		<label> Age <input type="checkbox" name="chex"></label> -->
+		<input type="submit" id="registration">
+	</form>
+	<script>
+		document.forms[0].addEventListener('submit',validateForm);
+
+			function hasValue(field){
+				if(field.type == 'text') {
+					if (field.value != "") {
+						return true;
+					}
+				}
+				else {
+					return true;
+				}
+			}
+
+			function validateForm (e) {
+				var currentForm = this;
+				var valid = true;
+				var removeInvalid = function(){
+					this.classList.remove('invalid');
+				}
+
+
+				// var nameField = document.getElementsByName('name')[0];
+				// 	if (nameField.value == "") {
+				// 		nameField.classList.add('invalid');
+				// 		nameField.addEventListener("focus",removeInvalid);
+				// 		valid = false;
+				// 	}
+				// var surnameField = document.getElementsByName('surname')[1];
+				// 	if (surnameField.value == "") {
+				// 		surnameField.classList.add('invalid');
+				// 		valid = false;
+				// 	}
+				// var age = document.getElementsByName('age')[2];
+				// 	if (age.value == "") {
+				// 		age.classList.add('invalid');
+				// 		valid = false;
+				// 	}
+				// else {
+				// 	var reg = /^\d+$/;
+				// 		if (!reg.test(ageField.value)) {
+				// 			valid = false;
+				// 		}
+				// }	
+
+				var fields = document.getElementsByClassName("field");
+
+			for (var i=0; i<fields.length; i++) {
+ 				if (fields[i].getAttribute('mandatory') != null) {
+ 					if (!hasValue(fields[i])) {
+ 						fields[i].classList.add('invalid');
+            			fields[i].addEventListener("focus", removeInvalid);
+ 						valid = false; ;
+ 				}
+				}
+			}
+			if (!valid) {
+				e.preventDefault()();
+				return false;
+			}
+
+			else return true;
+		}
+	</script>
+</body>
+</html>
