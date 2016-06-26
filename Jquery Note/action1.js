@@ -40,7 +40,15 @@ Note.prototype.generateHtml = function(){
     .attr("id", currentNote.id)
     .css("background-color", currentNote.color)
     .css("left", currentNote.left)
-    .css("top", currentNote.top);
+    .css("top", currentNote.top)
+    .draggable({
+      stop: function() {
+          var spe = event.target; /*spe - savePositionElement*/
+          currentNote.top = spe.style.top;
+          currentNote.left = spe.style.left;
+          currentNote.saveToLocalStorage();
+      }
+    });
 
   var $newTitle =$("<textarea></textarea>")
     .attr("class", "title_note")
@@ -76,10 +84,6 @@ Note.prototype.generateHtml = function(){
 
   return $newBox;
 } /*+*/
-
-$(function() {
-  $( ".box" ).draggable();
-});
 
 Note.createNote = function(obj){ 
     var note = new Note();
