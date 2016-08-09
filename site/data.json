@@ -1,0 +1,23 @@
+{
+ "System":[
+ 		{
+ 			"title": "What is it?", 
+ 			 "entry": "Our solar system is made up of the sun and everything that travels around it. This includes eight planets and their natural satellites such as Earth's moon, dwarf planets such as Pluto and Ceres, asteroids, comets and meteoroids. "
+ 			},
+ 		{
+ 			"title": "Sun-Centered", 
+ 			"entry": "The sun is the center of our solar system. It contains almost all of the mass in our solar system and exerts a tremendous gravitational pull on planets and other bodies."
+ 		},
+		{
+			"title": "Can Stand On Them",    
+			"entry": "The four planets closest to the sun -- Mercury, Venus, Earth, and Mars -- are called the terrestrial planets because they have solid, rocky surfaces."
+		},
+ 		{
+ 			"title": "Can't Stand on Them",    
+ 			"entry": "Two of the outer planets beyond the orbit of Mars -- Jupiter and Saturn -- are known as gas giants; the more distant Uranus and Neptune are called ice giants."
+ 		},
+ 		{
+ 			"title": "Spiral Galaxy",    
+ 			"entry": "Our solar system is located in the Orion Arm of the Milky Way Galaxy. There are most likely billions of other solar systems in our galaxy. And there are billions of galaxies in the Universe."
+ 		}]
+}

@@ -1,0 +1,72 @@
+/*
+  ========================================
+  Gallery
+  ========================================
+*/
+/*.gallery_image {
+	background-size: cover;
+	padding: 0;
+	cursor: pointer;
+}
+.back_row_1 {
+	height: 265px;
+}
+.back_row_2 {
+	height: 400px;
+}
+.back_row_3 {
+	height: 200px;
+}
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	display:none;
+	text-align:center;
+}
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:absolute;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+.popup_img {
+	position: relative;
+	margin:0 auto;
+	z-index:2;
+	max-height:94%;
+	max-width:94%;
+	margin:1% 0 0 0;
+}
+.pic4 {
+	height: 530px;
+}*/
+
+/*    $(".gallery_image").click(function(event){  
+        var img = $(this); 
+        var src = img.attr('src');
+        var position = window.scrollY;
+        var $newBox = $("<div ></div>")
+            .attr("class", "popup")
+            .css("top", position);
+
+        var $insideBox = $("<div ></div>")
+            .attr("class", "popup_bg");
+        var $image = $("<img>")
+            .attr("src", src)
+            .attr("class", "popup_img");
+
+        $("body").append($newBox);
+        $newBox.append($insideBox);
+        $insideBox.append($image);
+
+        $(".popup").fadeIn(800);
+
+        $(".popup_bg").click(function(){      
+            $(".popup").fadeOut(800);
+            setTimeout(function() {
+                $(".popup").remove();
+            }, 800);
+        });
+    });*/

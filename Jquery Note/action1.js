@@ -12,8 +12,8 @@ function Note (){
   this.id  = 'id' + (new Date()).getTime();
   this.title = ":)";
   this.text = "Hello world!";
-  this.top = getPositionElement(200);
-  this.left = getPositionElement(500);
+  this.top = getPositionElement(50);
+  this.left = getPositionElement(1000);
   this.color =  randomColor();
 } /*+*/
 
@@ -28,7 +28,7 @@ function randomColor(){
 } /*+*/
 
 function getPositionElement (max) {
-    var position = Math.round(Math.random() * max);
+    var position = Math.round(0 + Math.random() * (max - 0));
     return position + 'px';
 } /*+*/
 
@@ -41,8 +41,22 @@ Note.prototype.generateHtml = function(){
     .css("background-color", currentNote.color)
     .css("left", currentNote.left)
     .css("top", currentNote.top)
+
     .draggable({
       stop: function() {
+  //       var containsNote = false;
+  //       while(remElem != e.curretTarget){
+  //       var isNote = remElem.classList.contains('box');
+  //       if(isNote) {
+  //         containsNote = true;
+  //         break;
+  //       }
+  //       else {
+  //         remElem = remElem.parentElement;
+  //       }
+  //     }
+  // if(!containsNote) return;
+
           var spe = event.target; /*spe - savePositionElement*/
           currentNote.top = spe.style.top;
           currentNote.left = spe.style.left;
@@ -78,9 +92,7 @@ Note.prototype.generateHtml = function(){
   });
   
   $allNotes.append($newBox);
-  $newBox.append($newTitle);
-  $newBox.append($newDelete);
-  $newBox.append($newConTent);
+  $newBox.append($newTitle, $newDelete, $newConTent);
 
   return $newBox;
 } /*+*/
@@ -101,7 +113,8 @@ Note.prototype.saveToLocalStorage = function(){
     localStorage.setItem(currentNote.id, JSON.stringify(currentNote));
 }; /*+*/
 
-$(document).ready(function () {
+function init() {
+
     if(localStorage.length > 0){
         for(var i=0; i < localStorage.length; i++) {
             var keys =  localStorage.getItem(localStorage.key(i));
@@ -109,4 +122,6 @@ $(document).ready(function () {
             $allNotes.append(obj.generateHtml());
         }
     }
-}); /*+*/
+}
+
+$(document).ready(init); /*+*/

@@ -1,0 +1,198 @@
+@import url("variables.less");
+
+body {
+	background-image: url(../images/milky_way.png);
+}
+
+#top,
+.well,
+#about .text_container,
+#contact .text_container,
+#back {
+	margin-left: @center_box;
+}
+#about .row {
+	margin-left: 0px;
+}
+
+.home_container,
+.text_container {
+	h2 {color: @greyColor;}
+}
+/*
+  ========================================
+  HEADER
+  ========================================
+*/
+header {
+	background:fixed url(../images/around.jpg) no-repeat;
+	background-size: @picCover;
+	height: 100vh;
+}
+.pic-inside {
+	cursor: pointer;
+	background:url(../images/inside.gif) no-repeat;
+	background-size: @picCover;
+    height: 100px;
+    width: 100px;
+	position: absolute;
+	left: ~"calc(50% - 50px)";
+	bottom: 40px;
+    border-radius: 50%;
+    p {
+	   	text-align: @center_text;
+	   	line-height: 100px;
+   	}
+}
+
+/*
+  ========================================
+  TOP
+  ========================================
+*/
+.nav_style {
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(15,13,15,1) 45%, rgba(44,61,66,1) 100%);
+	border-radius: 0 0 5px 5px;
+	border: 0 solid black;
+}
+.top_title{
+	color:@subColor;
+	font-size: @fontSize*0.7;
+	letter-spacing: 10px;
+}
+.nav_menu {
+	color:@subColor;
+	text-align: right;
+	li {
+		padding-right: 10px;
+		display: inline-block;
+		font-size: @fontSize*0.7;
+	}
+	a { text-decoration: none; }
+}
+.mobile_top {
+	display: none;
+}
+
+a {
+	color:@subColor;
+	&:hover.links {color:@greyColor;}
+	&:active.links {color:@greyColor;}	
+}
+
+/*
+  ========================================
+  HOME
+  ========================================
+*/
+.bck_img {
+    background-color: rgba(225,225,225,0.8);
+    width: ~"calc(91.66666667% - 20px);";
+	margin-left: ~"calc(50% - 91.66666667% / 2 + 10px);";
+}
+.home_frame {
+	border: 1px solid black;
+	height: 250px;
+	text-align: center;
+}
+.home_frame:hover {
+	background-color: white;
+}
+.home_container {
+	h1 {
+		margin-top:80px;
+		text-align: center;
+	}
+	.row_1{
+		padding-left: @center_box;
+	}
+}
+/*
+  ========================================
+  GALLERY
+  ========================================
+*/
+.gallery {
+	height: 90vh;
+}
+.planets {
+	vertical-align: bottom;
+}
+
+/*
+  ========================================
+  ABOUT
+  ========================================
+*/
+
+.text_container {
+	text-align: center;
+	margin:50px 0;
+	h2 {
+		margin-top: 20px;
+		line-height: 40px;
+	}
+}
+.block1 {
+	background-color: rgb(170, 85, 34);
+}
+.block2 {
+	background-color: rgb(34, 136, 187);
+}
+.block3 {
+	background-color: rgb(68, 153, 102);
+}
+.block4 {
+	background-color: rgb(164, 164, 48);
+}
+
+.modal-header h4 {
+	color: black;
+}
+.modal-body img {
+	width: 100%;
+}
+/*
+  ========================================
+  FORMS
+  ========================================
+*/
+
+.forms_group {
+	margin-bottom: 10px;
+	label {
+		margin-bottom: 10px;
+		font-size: @fontSize*0.75;
+	}
+}
+.forms_text  {
+	margin-bottom: 10px;
+	font-size: 20px;
+	border-radius: 7px;
+	height: 37px;
+	border: 1px solid grey;
+}
+
+.form_col_3 {
+	ul{
+		list-style-type: none;
+	}
+}
+/*
+  ========================================
+  BACK
+  ========================================
+*/
+#back {
+	color: @subColor;
+	height: 100px;
+	margin-top: 40px;
+	font-size: 17px;
+}
+.btn-go {
+	background-image: url(../images/go.png);
+	height: 128px;
+	width: 128px;
+	margin-left: ~"calc(50% - 64px);";
+	z-index: 1;
+}

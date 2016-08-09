@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	
+	<script type="text/javascript" src="assets/js/ui/jquery-ui.min.js"></script>
+	<title>Anna Bolshedvorska</title>
+</head>
+<body>
+
+	<header class="world col-sm-12 col-md-12 col-lg-12">
+		<div class="pic-inside go">
+			<p>look inside</p>
+		</div>
+	</header>
+
+	<div class="inside" hidden>
+		<div class="mobile_top">
+			<div class="navbar btn btn_sun dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></div>
+
+			<ul class="dropdown-menu dropdown-menu-right mobile_link">
+				<li>
+					<a href="#home" class="links">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href=".gallery" class="links">
+						Galleries
+					</a>
+				</li>
+				<li>
+					<a href="#about" class="links">
+						Planets
+					</a>
+				</li>
+				<li>
+					<a href="#contact" class="links">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<nav id="top" class="container nav_style navbar navbar-default navbar-fixed-top col-sm-11 col-md-11 col-lg-11">
+			<div class="navbar-header top_title">
+				Solar System
+			</div>
+			
+			<ul class="navbar-right nav_menu">
+				<li>
+					<a href="#home" class="links">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#gallery" class="links">
+						Galleries
+					</a>
+				</li>
+				<li>
+					<a href="#about" class="links">
+						Planets
+					</a>
+				</li>
+				<li>
+					<a href="#contact" class="links">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	 	
+		<div class="bck_img col-sm-11 col-md-11 col-lg-11">
+			<section id="home" class="home_container">
+			</section>
+
+			<div id="carousel-example-generic" class="gallery carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+    				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    				<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    				<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    				<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    				<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+  				</ol>
+
+  				<div class="carousel-inner" role="listbox">
+  					<div class="item active">
+						<img src="assets/images/planets/Mercury.png" alt="Mercury" class="planets center-block">
+						<div class="carousel-caption planets_name">Mercury</div>
+					</div>
+					<div class="item">
+						<img src="assets/images/planets/Venus.png" alt="Venus" class="planets center-block">
+						<div class="carousel-caption planets_name">Venus</div>
+					</div>
+
+					<div class="item">
+						<img src="assets/images/planets/Earth.png" alt="Earth" class="planets center-block">
+						<div class="carousel-caption planets_name">Earth</div>
+					</div>
+
+					<div class="item">
+						<img src="assets/images/planets/Mars.png" alt="Mars" class="planets center-block">
+						<div class="carousel-caption planets_name ">Mars</div>
+					</div>
+
+					<div class="item">
+						<img src="assets/images/planets/Jupiter.png" alt="Jupiter" class="planets center-block">
+						<div class="carousel-caption planets_name">Jupiter</div>
+					</div>
+
+					<div class="item">
+						<img src="assets/images/planets/Saturn.png" alt="Saturn" class="planets center-block">
+						<div class="carousel-caption planets_name">Saturn</div>
+					</div>
+
+					<div class="item">
+						<img src="assets/images/planets/Neptune.png" alt="Neptune" class="planets center-block">
+						<div class="carousel-caption planets_name">Neptune</div>
+					</div>	
+				</div>
+
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    				<span class="sr-only">Previous</span>
+    			</a>
+
+    			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    				<span class="sr-only">Next</span>
+    			</a>
+			</div>
+			
+
+			<section id="about">
+				<div class="text_container col-sm-11 col-md-11 col-lg-11">
+					<h1>About Planets</h1>
+					<h2>Below is a brief overview of the eight primary planets in our solar system, in order from the inner solar system outward:</h2>
+				</div>
+
+				<div class="row col-sm-12 col-md-12 col-lg-12">
+					<div class="blocks block1 col-sm-12 col-md-4 col-lg-3">
+						<h1>Mercury: Overview: The Swiftest Planet</h1>
+						<p>Mercury's eccentric orbit takes the small planet as close as 47 million km (29 million miles) and as far as 70 million km (43 million miles) from the sun. If one could stand on the scorching surface of Mercury when it is at its closest point to the sun, the sun would appear more than three times as large as it does when viewed from Earth.</p>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myMercury"> More </button>
+
+						<div class="modal fade" id="myMercury" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+		      						<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        					<h4 class="modal-title" id="myModalLabel">VITAL STATS</h4>
+		      						</div>
+		      						<div class="modal-body">
+		        					<img src="assets/images/stats/mercury.jpg">
+		      						</div>
+		      						<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      						</div>
+	    						</div>
+  							</div>
+						</div>
+					</div>
+
+					<div class="blocks block2 col-sm-12 col-md-4 col-lg-3">
+						<h1>Venus: Overview: Planetary Hot Spot</h1>
+						<p>Similar in structure and size to Earth, Venus' thick, toxic atmosphere traps heat in a runaway greenhouse effect. A permanent layer of clouds traps heat, creating surface temperatures hot enough to melt lead. Glimpses below the clouds reveal volcanoes and deformed mountains. Venus spins slowly in the opposite direction of most planets.</p>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myVenus"> More </button>
+
+						<div class="modal fade" id="myVenus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+		      						<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        					<h4 class="modal-title" id="myModalLabel">VITAL STATS</h4>
+		      						</div>
+		      						<div class="modal-body">
+		        					<img src="assets/images/stats/venus.jpg">
+		      						</div>
+		      						<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      						</div>
+	    						</div>
+  							</div>
+						</div>
+					</div>
+
+					<div class="blocks block3 col-sm-12 col-md-4 col-lg-3">
+						<h1>Earth: Overview: Our Home Planet</h1>
+						<p>Earth, our home planet, is the only planet in our solar system known to harbor life - life that is incredibly diverse. All the things we need to survive exist under a thin layer of atmosphere that separates us from the cold, airless void of space.</p>
+						<button type="button" class="btn btn-info btn-lg btn-blocks" data-toggle="modal" data-target="#myEarth"> More </button>
+
+						<div class="modal fade" id="myEarth" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+		      						<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        					<h4 class="modal-title" id="myModalLabel">VITAL STATS</h4>
+		      						</div>
+		      						<div class="modal-body">
+		        					<img src="assets/images/stats/earth.jpg">
+		      						</div>
+		      						<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      						</div>
+	    						</div>
+  							</div>
+						</div>
+					</div>
+
+					<div class="blocks block4 col-sm-12 col-md-4 col-lg-3">
+						<h1>Mars: Overview: The Red Planet</h1>
+						<p>Mars is a cold desert world. It is half the diameter of Earth and has the same amount of dry land. Like Earth, Mars has seasons, polar ice caps, volcanoes, canyons and weather, but its atmosphere is too thin for liquid water to exist for long on the surface. There are signs of ancient floods on Mars, but evidence for water now exists mainly in icy soil and thin clouds.</p>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myMars"> More </button>
+
+						<div class="modal fade" id="myMars" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+		      						<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        					<h4 class="modal-title" id="myModalLabel">VITAL STATS</h4>
+		      						</div>
+		      						<div class="modal-body">
+		        					<img src="assets/images/stats/mars.jpg">
+		      						</div>
+		      						<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      						</div>
+	    						</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row col-sm-12 col-md-12 col-lg-12">
+					<div class="blocks block1 col-sm-12 col-md-4 col-lg-3">
+						<h1>Jupiter: Overview: King of the Planets</h1>
+						<p>Jupiter, the most massive planet in our solar system -- with dozens of moons and an enormous magnetic field -- forms a kind of miniature solar system. Jupiter does resemble a star in composition, but it did not grow big enough to ignite. The planet's swirling cloud stripes are punctuated by massive storms such as the Great Red Spot, which has raged for hundreds of years.</p>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myJupiter"> More </button>
+
+						<div class="modal fade" id="myJupiter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+		      						<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        					<h4 class="modal-title" id="myModalLabel">VITAL STATS</h4>
+		      						</div>
+		      						<div class="modal-body">
+		        					<img src="assets/images/stats/jupiter.jpg">
+		      						</div>
+		      						<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      						</div>
+	    						</div>
+  							</div>
+						</div>
+					</div>
+
+					<div class="blocks block2 col-sm-12 col-md-4 col-lg-3">
+						<h1>Saturn: Overview: Jewel of Our Solar System</h1>
+						<p>Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. All four gas giant planets have rings -- made of chunks of ice and rock -- but none are as spectacular or as complicated as Saturn's. Like the other gas giants, Saturn is mostly a massive ball of hydrogen and helium.</p>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mySaturn"> More </button>
+
+						<div class="modal fade" id="mySaturn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+		      						<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        					<h4 class="modal-title" id="myModalLabel">VITAL STATS</h4>
+		      						</div>
+		      						<div class="modal-body">
+		        					<img src="assets/images/stats/saturn.jpg">
+		      						</div>
+		      						<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      						</div>
+	    						</div>
+  							</div>
+						</div>
+					</div>
+
+					<div class="blocks block3 col-sm-12 col-md-4 col-lg-3">
+						<h1>Uranus: Overview: The Sideways Planet</h1>
+						<p>Uranus is the only giant planet whose equator is nearly at right angles to its orbit. A collision with an Earth-sized object may explain the unique tilt. Nearly a twin in size to Neptune, Uranus has more methane in its mainly hydrogen and helium atmosphere than Jupiter or Saturn. Methane gives Uranus its blue tint.</p>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myUranus"> More </button>
+
+						<div class="modal fade" id="myUranus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+		      						<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        					<h4 class="modal-title" id="myModalLabel">VITAL STATS</h4>
+		      						</div>
+		      						<div class="modal-body">
+		        					<img src="assets/images/stats/uranus.jpg">
+		      						</div>
+		      						<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      						</div>
+	    						</div>
+  							</div>
+						</div>
+					</div>
+
+					<div class="blocks block4 col-sm-12 col-md-4 col-lg-3">
+						<h1>Neptune: Overview: The Windiest Planet</h1>
+						<p>Dark, cold and whipped by supersonic winds, Neptune is the last of the hydrogen and helium gas giants in our solar system. More than 30 times as far from the sun as Earth, the planet takes almost 165 Earth years to orbit our sun. In 2011 Neptune completed its first orbit since its discovery in 1846. "We see (Neptune) as Columbus saw America from the coast of Spain. Its movements have been felt.</p>
+						<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myNeptune"> More </button>
+
+						<div class="modal fade" id="myNeptune" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  							<div class="modal-dialog" role="document">
+	    						<div class="modal-content">
+		      						<div class="modal-header">
+		        					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        					<h4 class="modal-title" id="myModalLabel">VITAL STATS</h4>
+		      						</div>
+		      						<div class="modal-body">
+		        					<img src="assets/images/stats/neptune.jpg">
+		      						</div>
+		      						<div class="modal-footer">
+			        					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      						</div>
+	    						</div>
+  							</div>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<section id="contact">
+					<span class="text_container col-sm-11 col-md-11 col-lg-11">
+						<h1>Contact</h1>
+						<h2>You may contact templatemo if you have any question. Suspendisse dolor purus, malesuada ut luctus quis, consectetur vel ante. Integer a pulvinar orci.</h2><br>
+						<div class="btn-go" role="button" data-toggle="collapse" href="#forms" aria-expanded="false" aria-controls="forms"></div>
+					</span>
+
+					<div class="collapse" id="forms">
+			  			<div id="forms" class="well col-sm-11 col-md-11 col-lg-11">
+				    		<div class="form_col_1 col-sm-12 col-md-4 col-lg-4">
+								<fieldset class="col-sm-12 col-md-12 col-lg-12 forms_group">
+									<label for="name">Your Name</label> <br>
+									<input type="text" id="name" placeholder="Write a full name" class="forms_text">
+								</fieldset>
+
+								<fieldset class="col-sm-12 col-md-12 col-lg-12 forms_group">
+									<label for="email">Your Email</label> <br>
+									<input type="email" id="email" placeholder="Enter your email" class="forms_text">
+								</fieldset>
+
+								<fieldset class="col-sm-12 col-md-12 col-lg-12 forms_group">
+									<label for="budget">Your Favourite Planet</label> <br>
+									<select id="budget" class="forms_text">
+										<option selected>Mercury</option>
+						    			<option>Venus</option>
+						    			<option >Earth</option>
+						    			<option>Mars</option>
+						    			<option>Jupiter</option>
+						    			<option >Saturn</option>
+						    			<option>Uranus</option>
+						    			<option>Neptune</option>
+									</select>
+								</fieldset>
+							</div>
+							
+							<div class="form_col_2 col-sm-12 col-md-4 col-lg-4">
+								<fieldset class="col-sm-12 col-md-12 col-lg-12 forms_group">
+									<label for="subject">Subject</label> <br>
+									<input type="text" id="subject" placeholder="Subject" class="forms_text">
+								</fieldset>
+
+								<fieldset class="col-sm-12 col-md-12 col-lg-12 forms_group">
+									<label for="message">Your Message</label> <br>
+									<input type="text" id="message" placeholder="Write a message" class="forms_text form_mes">
+								</fieldset>
+
+								<fieldset class="col-sm-12 col-md-12 col-lg-12 forms_group">
+									<label class="col-lg-12">
+										<input type="checkbox" class="forms_check">
+										I am not a robot.
+									</label>
+								</fieldset>
+
+								<fieldset class="col-sm-12 col-md-12 col-lg-12 forms_group">
+									<div class="btn btn-default btn-small">
+									Submit
+									</div>
+								</fieldset>
+							</div>
+
+							<div class="form_col_3 col-sm-12 col-md-4 col-lg-4">
+							<img src="assets/images/logoPlanet.png">
+								<ul>
+									<li>Email: anna.bolshedvorska@gmail.com</li>
+									<li>Phone: (063)999-70-73</li>
+								</ul>
+							</div>
+			  			</div>
+					</div>
+			</section>
+		</div>
+
+
+		<footer id="back" class="col-sm-11 col-md-11 col-lg-11">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				Copyright © 2016 Our Universe | design: Bolshedvorska Anna
+			</div>
+		</footer>
+	</div>
+
+	<script src="assets/js/action1.js"></script> 
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+</body>
+</html>
